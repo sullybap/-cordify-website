@@ -867,27 +867,28 @@
       <div class="contact-detail">⏱ <span><strong>Response time:</strong> Within 24 hours</span></div>
     </div>
     <div class="contact-form">
+      <form action="https://formspree.io/f/xnjknydw" method="POST">
       <div class="form-row">
         <div class="form-group">
           <label>First Name</label>
-          <input type="text" placeholder="Alex" />
+          <input type="text" name="first_name" placeholder="Alex" required />
         </div>
         <div class="form-group">
           <label>Last Name</label>
-          <input type="text" placeholder="Johnson" />
+          <input type="text" name="last_name" placeholder="Johnson" required />
         </div>
       </div>
       <div class="form-group">
         <label>Email</label>
-        <input type="email" placeholder="you@example.com" />
+        <input type="email" name="email" placeholder="you@example.com" required />
       </div>
       <div class="form-group">
         <label>Discord Username</label>
-        <input type="text" placeholder="username#0000 or @username" />
+        <input type="text" name="discord_username" placeholder="username#0000 or @username" />
       </div>
       <div class="form-group">
         <label>Service Needed</label>
-        <select>
+        <select name="service">
           <option value="">Select a service...</option>
           <option>Starter Build ($149)</option>
           <option>Pro Build ($349)</option>
@@ -900,9 +901,10 @@
       </div>
       <div class="form-group">
         <label>Tell us about your server</label>
-        <textarea placeholder="What's your server for? How many members? What's not working right now?"></textarea>
+        <textarea name="message" placeholder="What's your server for? How many members? What's not working right now?"></textarea>
       </div>
-      <button class="form-submit">Send Request →</button>
+      <button type="submit" class="form-submit">Send Request →</button>
+      </form>
     </div>
   </div>
 </section>
